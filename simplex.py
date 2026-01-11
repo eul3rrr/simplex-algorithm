@@ -1,9 +1,9 @@
 import numpy as np
-epsilon = 1e-10
+epsilon = 1e-10       # Not sure what im doing with this line, if it works dont fix it
 
-cost = np.array([-10, 12, 3, 0, 0, 0])          #Minimize cost^T*x subject to
-constraints = np.array([[1, 2, 2, 1, 0, 0]      #Ax = b, x >= 0 where A is a m*n matrix
-                       ,[2, 1, 8, 0, 1, 0]      #given a basic feasible solution.
+cost = np.array([-10, 12, 3, 0, 0, 0])          # Minimize cost^T*x subject to
+constraints = np.array([[1, 2, 2, 1, 0, 0]      # Ax = b, x >= 0 where A is a m*n matrix
+                       ,[2, 1, 8, 0, 1, 0]      # given a basic feasible solution.
                         ,[5, 2, 1, 0, 0, 1]])
 b = np.array([20, 20, 20])
 
